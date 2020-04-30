@@ -1,7 +1,7 @@
 FROM alpine:3.11
 
 LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
-    org.label-schema.name="Kimai2" \
+    org.label-schema.name="Nginx" \
     org.label-schema.vendor="ownCloud GmbH" \
     org.label-schema.schema-version="1.0"
 
