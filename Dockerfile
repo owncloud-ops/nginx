@@ -13,8 +13,8 @@ RUN addgroup -g 101 -S nginx && \
     rm -rf /etc/nginx/conf.d && \
     curl -SsL -o /usr/local/bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v3.8.0/gomplate_linux-amd64-slim && \
     curl -SsL -o /usr/local/bin/supercronic https://github.com/aptible/supercronic/releases/download/v0.1.9/supercronic-linux-amd64 && \
-    curl -SsL -o /usr/local/bin/url-parser https://github.com/xoxys/url-parser/releases/download/v0.1.0/url-parser-0.1.0-linux-amd64 && \
-    curl -SsL -o /usr/local/bin/wait-for https://raw.githubusercontent.com/xoxys/wait-for/master/wait-for && \
+    curl -SsL -o /usr/local/bin/url-parser https://github.com/thegeeklab/url-parser/releases/download/v0.1.1/url-parser-linux-amd64 && \
+    curl -SsL -o /usr/local/bin/wait-for https://raw.githubusercontent.com/thegeeklab/wait-for/master/wait-for && \
     chmod 755 /usr/local/bin/gomplate && \
     chmod 755 /usr/local/bin/supercronic && \
     chmod 755 /usr/local/bin/url-parser && \
