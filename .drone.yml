@@ -25,6 +25,9 @@ steps:
     DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
     DOCKER_AUTOTAG_OUTPUT_FILE: .tags
     DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
+  commands:
+    - docker-autotag
+    - cat .tags
 
 - name: changelog
   image: thegeeklab/git-chglog
