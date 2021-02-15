@@ -25,10 +25,6 @@ steps:
     DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
     DOCKER_AUTOTAG_OUTPUT_FILE: .tags
     DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
-  when:
-    ref:
-    - refs/heads/master
-    - refs/tags/**
 
 - name: changelog
   image: thegeeklab/git-chglog
@@ -86,7 +82,7 @@ steps:
     DOCKER_USER:
       from_secret: docker_username
     PUSHRM_FILE: README.md
-    PUSHRM_TARGET: owncloudci/${DRONE_REPO_NAME}
+    PUSHRM_TARGET: owncloudops/${DRONE_REPO_NAME}
 
 - name: notify
   image: plugins/slack
