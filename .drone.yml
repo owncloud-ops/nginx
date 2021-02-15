@@ -7,17 +7,6 @@ platform:
   arch: amd64
 
 steps:
-- name: dryrun
-  image: plugins/docker
-  settings:
-    dockerfile: Dockerfile
-    dry_run: true
-    repo: owncloudops/${DRONE_REPO_NAME}
-    tags: latest
-  when:
-    ref:
-    - refs/pull/**
-
 - name: tags
   image: thegeeklab/docker-autotag
   environment:
@@ -25,6 +14,16 @@ steps:
     DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
     DOCKER_AUTOTAG_OUTPUT_FILE: .tags
     DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
+
+- name: dryrun
+  image: plugins/docker
+  settings:
+    dockerfile: Dockerfile
+    dry_run: true
+    repo: owncloudops/${DRONE_REPO_NAME}
+  when:
+    ref:
+    - refs/pull/**
 
 - name: changelog
   image: thegeeklab/git-chglog
