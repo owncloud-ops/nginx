@@ -1,9 +1,11 @@
 FROM alpine:3.13@sha256:08d6ca16c60fe7490c03d10dc339d9fd8ea67c6466dea8d558526b1330a85930
 
-LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
-    org.label-schema.name="Nginx" \
-    org.label-schema.vendor="ownCloud GmbH" \
-    org.label-schema.schema-version="1.0"
+LABEL maintainer="ownCloud DevOps <devops@owncloud.com>"
+LABEL org.opencontainers.image.authors="ownCloud DevOps <devops@owncloud.com>"
+LABEL org.opencontainers.image.title="NGINX Web"
+LABEL org.opencontainers.image.url="https://github.com/owncloud-ops/nginx"
+LABEL org.opencontainers.image.source="https://github.com/owncloud-ops/nginx"
+LABEL org.opencontainers.image.documentation="https://github.com/owncloud-ops/nginx"
 
 RUN addgroup -g 101 -S nginx && \
     adduser -S -D -H -u 101 -h /var/www -s /sbin/nologin -G nginx -g nginx nginx && \
