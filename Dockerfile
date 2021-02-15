@@ -1,4 +1,4 @@
-FROM alpine:3.11@sha256:0bd0e9e03a022c3b0226667621da84fc9bf562a9056130424b5bfbd8bcb0397f
+FROM alpine:3.13@sha256:08d6ca16c60fe7490c03d10dc339d9fd8ea67c6466dea8d558526b1330a85930
 
 LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
     org.label-schema.name="Nginx" \
