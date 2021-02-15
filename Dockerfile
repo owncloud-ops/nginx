@@ -7,6 +7,11 @@ LABEL org.opencontainers.image.url="https://github.com/owncloud-ops/nginx"
 LABEL org.opencontainers.image.source="https://github.com/owncloud-ops/nginx"
 LABEL org.opencontainers.image.documentation="https://github.com/owncloud-ops/nginx"
 
+ARG GOMPLATE_VERSION
+ARG SUPERCRONIC_VERSION
+ARG URL_PARSER_VERSION
+ARG WAIT_FOR_VERSION
+
 # renovate: datasource=github-releases depName=hairyhenderson/gomplate
 ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.8.0}"
 # renovate: datasource=github-releases depName=aptible/supercronic
