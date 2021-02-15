@@ -20,9 +20,6 @@ steps:
 
 - name: tags
   image: thegeeklab/docker-autotag
-  commands:
-  - docker-autotag
-  - cat .tags
   environment:
     DOCKER_AUTOTAG_FORCE_LATEST: True
     DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
