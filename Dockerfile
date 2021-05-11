@@ -17,7 +17,7 @@ ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.9.0}"
 # renovate: datasource=github-releases depName=aptible/supercronic
 ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.1.12}"
 # renovate: datasource=github-releases depName=thegeeklab/url-parser
-ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v0.2.3}"
+ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v0.2.4}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
 ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.1.1}"
 
