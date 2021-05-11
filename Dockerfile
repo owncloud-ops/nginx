@@ -19,7 +19,7 @@ ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.1.12}"
 # renovate: datasource=github-releases depName=thegeeklab/url-parser
 ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v0.2.4}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
-ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.1.1}"
+ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.1.2}"
 
 RUN addgroup -g 101 -S nginx && \
     adduser -S -D -H -u 101 -h /var/www -s /sbin/nologin -G nginx -g nginx nginx && \
