@@ -1,9 +1,9 @@
 ---
 repository:
   name: nginx
-  description: Base nginx docker image.
+  description: Custom nginx base container image
   homepage: https://hub.docker.com/r/owncloudops/nginx
-  topics: docker, nginx, base
+  topics: oci, container, nginx, base
 
   private: false
   has_issues: true
