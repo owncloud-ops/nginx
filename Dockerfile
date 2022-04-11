@@ -11,6 +11,7 @@ ARG GOMPLATE_VERSION
 ARG SUPERCRONIC_VERSION
 ARG URL_PARSER_VERSION
 ARG WAIT_FOR_VERSION
+ARG CONTAINER_LIBRARY_VERSION
 
 # renovate: datasource=github-releases depName=hairyhenderson/gomplate
 ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.10.0}"
@@ -20,6 +21,8 @@ ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.1.12}"
 ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v0.2.8}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
 ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.2.0}"
+# renovate: datasource=github-releases depName=owncloud-ops/container-library
+ENV CONTAINER_LIBRARY_VERSION="${CONTAINER_LIBRARY_VERSION:-v0.1.0}"
 
 RUN addgroup -g 101 -S nginx && \
     adduser -S -D -H -u 101 -h /var/www -s /sbin/nologin -G nginx -g nginx nginx && \
@@ -31,6 +34,7 @@ RUN addgroup -g 101 -S nginx && \
     curl -SsL -o /usr/local/bin/supercronic "https://github.com/aptible/supercronic/releases/download/${SUPERCRONIC_VERSION}/supercronic-linux-amd64" && \
     curl -SsL -o /usr/local/bin/url-parser "https://github.com/thegeeklab/url-parser/releases/download/${URL_PARSER_VERSION}/url-parser-linux-amd64" && \
     curl -SsL -o /usr/local/bin/wait-for "https://github.com/thegeeklab/wait-for/releases/download/${WAIT_FOR_VERSION}/wait-for" && \
+    curl -SsL "https://github.com/owncloud-ops/container-library/releases/download/${CONTAINER_LIBRARY_VERSION}/container-library.tar.gz" | tar xz -C / && \
     chmod 755 /usr/local/bin/gomplate && \
     chmod 755 /usr/local/bin/supercronic && \
     chmod 755 /usr/local/bin/url-parser && \
