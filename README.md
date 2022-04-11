@@ -13,4 +13,4 @@ docker build -f Dockerfile -t nginx:latest .
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/owncloud-ops/nginx/blob/master/LICENSE) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/owncloud-ops/nginx/blob/main/LICENSE) file for details.
