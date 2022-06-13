@@ -30,7 +30,7 @@ RUN addgroup -g 101 -S nginx && \
     apk --update --no-cache add nginx ca-certificates && \
     rm -rf /var/www/localhost && \
     rm -rf /etc/nginx/conf.d && \
-    curl -SsL -o /usr/local/bin/gomplate "https://github.com/hairyhenderson/gomplate/releases/download/${GOMPLATE_VERSION}/gomplate_linux-amd64-slim" && \
+    curl -SsL -o /usr/local/bin/gomplate "https://github.com/hairyhenderson/gomplate/releases/download/${gomplate_VERSION}/gomplate_linux-amd64" && \
     curl -SsL -o /usr/local/bin/supercronic "https://github.com/aptible/supercronic/releases/download/${SUPERCRONIC_VERSION}/supercronic-linux-amd64" && \
     curl -SsL -o /usr/local/bin/url-parser "https://github.com/thegeeklab/url-parser/releases/download/${URL_PARSER_VERSION}/url-parser-linux-amd64" && \
     curl -SsL -o /usr/local/bin/wait-for "https://github.com/thegeeklab/wait-for/releases/download/${WAIT_FOR_VERSION}/wait-for" && \
