@@ -16,7 +16,7 @@ ARG CONTAINER_LIBRARY_VERSION
 # renovate: datasource=github-releases depName=hairyhenderson/gomplate
 ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.11.1}"
 # renovate: datasource=github-releases depName=aptible/supercronic
-ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.2.0}"
+ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.2.1}"
 # renovate: datasource=github-releases depName=thegeeklab/url-parser
 ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v0.2.12}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
