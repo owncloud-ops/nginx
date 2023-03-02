@@ -20,7 +20,7 @@ ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.2.2}"
 # renovate: datasource=github-releases depName=thegeeklab/url-parser
 ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v1.0.2}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
-ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.3.0}"
+ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.4.2}"
 # renovate: datasource=github-releases depName=owncloud-ops/container-library
 ENV CONTAINER_LIBRARY_VERSION="${CONTAINER_LIBRARY_VERSION:-v0.1.0}"
 
