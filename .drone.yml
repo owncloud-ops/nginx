@@ -20,6 +20,8 @@ steps:
     image: quay.io/thegeeklab/docker-autotag
     commands:
       - cat .tags
+    depends_on:
+    - tags
 
   - name: dryrun
     image: docker.io/plugins/docker
