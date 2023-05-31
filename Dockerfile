@@ -6,6 +6,7 @@ LABEL org.opencontainers.image.title="NGINX Web"
 LABEL org.opencontainers.image.url="https://github.com/owncloud-ops/nginx"
 LABEL org.opencontainers.image.source="https://github.com/owncloud-ops/nginx"
 LABEL org.opencontainers.image.documentation="https://github.com/owncloud-ops/nginx"
+LABEL quay.expires-after=12w
 
 ARG GOMPLATE_VERSION
 ARG SUPERCRONIC_VERSION
