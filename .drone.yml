@@ -14,6 +14,7 @@ steps:
       DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
       DOCKER_AUTOTAG_OUTPUT_FILE: .tags
       DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
+      DOCKER_AUTOTAG_EXTRA_TAGS: ${DRONE_COMMIT_SHA:0:12}
 
   - name: dryrun
     image: docker.io/plugins/docker
