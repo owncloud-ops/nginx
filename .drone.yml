@@ -16,13 +16,6 @@ steps:
       DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
       DOCKER_AUTOTAG_EXTRA_TAGS: ${DRONE_COMMIT_SHA:0:12}
 
-  - name: debug
-    image: quay.io/thegeeklab/docker-autotag
-    commands:
-      - cat .tags
-    depends_on:
-    - tags
-
   - name: dryrun
     image: docker.io/plugins/docker
     settings:
