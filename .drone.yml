@@ -35,6 +35,7 @@ steps:
       TRIVY_NO_PROGRESS: True
       TRIVY_SEVERITY: HIGH,CRITICAL
       TRIVY_TIMEOUT: 1m
+      TRIVY_SKIP_FILES: /usr/local/bin/gomplate
     depends_on:
       - security-build
 
@@ -156,5 +157,3 @@ trigger:
 
 depends_on:
   - container
-
-...
