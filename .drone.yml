@@ -8,15 +8,6 @@ platform:
   arch: amd64
 
 steps:
-  - name: tags
-    image: quay.io/thegeeklab/docker-autotag
-    environment:
-      DOCKER_AUTOTAG_EXTRA_TAGS: ${DRONE_COMMIT_SHA:0:12}
-      DOCKER_AUTOTAG_FORCE_LATEST: True
-      DOCKER_AUTOTAG_IGNORE_PRERELEASE: True
-      DOCKER_AUTOTAG_OUTPUT_FILE: .tags
-      DOCKER_AUTOTAG_VERSION: ${DRONE_TAG}
-
   - name: security-build
     image: docker.io/owncloudci/drone-docker-buildx:1
     settings:
