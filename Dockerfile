@@ -28,6 +28,7 @@ RUN addgroup -g 101 -S nginx && \
     adduser -S -D -H -u 101 -h /var/www -s /sbin/nologin -G nginx -g nginx nginx && \
     apk --update add --virtual .build-deps curl && \
     apk --update --no-cache add nginx ca-certificates && \
+    apk upgrade --no-cache libcrypto3 libssl3 && \
     rm -rf /var/www/localhost && \
     rm -rf /etc/nginx/conf.d && \
     curl -SsfL -o /usr/local/bin/gomplate "https://github.com/hairyhenderson/gomplate/releases/download/${GOMPLATE_VERSION}/gomplate_linux-amd64" && \
