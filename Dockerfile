@@ -18,7 +18,7 @@ ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v4.0.1}"
 # renovate: datasource=github-releases depName=aptible/supercronic
 ENV SUPERCRONIC_VERSION="${SUPERCRONIC_VERSION:-v0.2.30}"
 # renovate: datasource=github-releases depName=thegeeklab/url-parser
-ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v2.0.3}"
+ENV URL_PARSER_VERSION="${URL_PARSER_VERSION:-v2.0.5}"
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
 ENV WAIT_FOR_VERSION="${WAIT_FOR_VERSION:-v0.4.2}"
 # renovate: datasource=github-releases depName=owncloud-ops/container-library
